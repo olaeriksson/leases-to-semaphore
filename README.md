@@ -5,6 +5,12 @@ It supports filtering to only include active IP addresses from a subset of the t
 
 This tool fits perfectly in to your infrastructure-as-code projects and allows you to use ISC DHCPD to assign address ranges to your infrastructure components and have your Ansible inventory (in Semaphore) updated automatically when new devices are brought online.
 
+Hostnames
+---------
+If PTR records are available for the IP addresses, these will be used in the inventory instead of the IP address found from the leases file.
+
+More
+----
 Read more on Github:
 https://github.com/olaeriksson/leases-to-semaphore
 
